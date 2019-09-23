@@ -1,6 +1,6 @@
 {
   "name": "@realness.online/potrace",
-  "version": "2.1.7",
+  "version": "2.1.8",
   "description": "Potrace in Javascript, in es module format",
   "main": "lib/index.js",
   "scripts": {
@@ -25,14 +25,12 @@
   },
   "homepage": "https://github.com/realness-online/potrace#readme",
   "devDependencies": {
+    "jimp": "^0.8.4",
     "lodash": "^4.15.0",
     "mocha": "^3.0.2",
     "should": "^11.1.0",
     "should-sinon": "0.0.5",
-    "sinon": "^1.17.5",
-    "jimp": "^0.8.4"
+    "sinon": "^1.17.5"
   },
-  "dependencies": {
-
-  }
+  "dependencies": {}
 }
