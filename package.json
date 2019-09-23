@@ -1,14 +1,14 @@
 {
-  "name": "potrace",
-  "version": "2.1.2",
-  "description": "Potrace in Javascript, for NodeJS",
+  "name": "@realness.online/potrace",
+  "version": "2.1.5",
+  "description": "Potrace in Javascript, in es module format",
   "main": "lib/index.js",
   "scripts": {
     "test": "cd test && mocha test.js --reporter spec"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tooolbox/node-potrace.git"
+    "url": "git+https://github.com/realness-online/potrace.git"
   },
   "keywords": [
     "potrace",
@@ -18,20 +18,20 @@
     "bitmap",
     "posterization"
   ],
-  "author": "mattmc",
+  "author": "sfryxell",
   "license": "GPL-2.0",
   "bugs": {
-    "url": "https://github.com/tooolbox/node-potrace/issues"
+    "url": "https://github.com/realness-online/potrace/issues"
   },
-  "homepage": "https://github.com/tooolbox/node-potrace#readme",
-  "dependencies": {
-    "jimp": "^0.6.4"
-  },
+  "homepage": "https://github.com/realness-online/potrace#readme",
   "devDependencies": {
     "lodash": "^4.15.0",
     "mocha": "^3.0.2",
     "should": "^11.1.0",
     "should-sinon": "0.0.5",
     "sinon": "^1.17.5"
+  },
+  "dependencies": {
+    "jimp-compact": "^0.8.4"
   }
 }
