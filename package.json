@@ -1,7 +1,7 @@
 {
   "name": "@realness.online/potrace",
   "version": "2.1.21",
-  "description": "Potrace in Javascript, in es module format",
+  "description": "Potrace in Javascript",
   "main": "lib/index.js",
   "scripts": {
     "test": "cd test && mocha test.js --reporter spec"
@@ -18,7 +18,7 @@
     "bitmap",
     "posterization"
   ],
-  "author": "sfryxell",
+  "author": "scott.fryxell@hey.com",
   "license": "GPL-2.0",
   "bugs": {
     "url": "https://github.com/realness-online/potrace/issues"
