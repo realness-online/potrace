@@ -4,7 +4,7 @@
   "description": "Potrace in Javascript",
   "main": "lib/index.js",
   "scripts": {
-    "test": "cd test && mocha test.js --reporter spec"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -25,13 +25,59 @@
   },
   "homepage": "https://github.com/realness-online/potrace#readme",
   "devDependencies": {
-    "lodash": "^4.15.0",
-    "mocha": "^3.0.2",
-    "should": "^11.1.0",
-    "should-sinon": "0.0.5",
-    "sinon": "^1.17.5"
+    "jest": "^27.1.0"
   },
   "dependencies": {
     "jimp": "^0.9.0"
+  },
+  "jest": {
+    "notify": false,
+    "notifyMode": "change",
+    "bail": 0,
+    "verbose": false,
+    "collectCoverage": false,
+    "restoreMocks": true,
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json",
+      "vue"
+    ],
+    "setupFiles": [
+      "<rootDir>/tests/vue/unit/setup.js"
+    ],
+    "transform": {
+      "^.+\\.vue$": "vue-jest",
+      ".+\\.(css|styl|less|sass|scss|svg|png|jpg|ttf|woff|woff2)$": "jest-transform-stub"
+    },
+    "transformIgnorePatterns": [
+      "\\.pnp\\.[^\\/]+$"
+    ],
+    "coverageDirectory": "<rootDir>/tests/vue/artifacts/unit/coverage",
+    "cacheDirectory": "<rootDir>/tests/vue/artifacts/unit/cache",
+    "collectCoverageFrom": [
+      "resources/js/**/*.{js,vue}",
+      "!resources/js/bootstrap.js",
+      "!**/node_modules/**"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 1,
+        "branches": 1,
+        "functions": 1,
+        "lines": 1
+      }
+    },
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/resources/js/$1"
+    },
+    "snapshotSerializers": [
+      "jest-serializer-vue"
+    ],
+    "testMatch": [
+      "**/tests/vue/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)"
+    ],
+    "testURL": "http://localhost/"
   }
+
 }
