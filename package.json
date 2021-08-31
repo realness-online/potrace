@@ -37,45 +37,22 @@
     "verbose": false,
     "collectCoverage": false,
     "restoreMocks": true,
-    "moduleFileExtensions": [
-      "js",
-      "jsx",
-      "json",
-      "vue"
-    ],
-    "setupFiles": [
-      "<rootDir>/tests/vue/unit/setup.js"
-    ],
-    "transform": {
-      "^.+\\.vue$": "vue-jest",
-      ".+\\.(css|styl|less|sass|scss|svg|png|jpg|ttf|woff|woff2)$": "jest-transform-stub"
-    },
-    "transformIgnorePatterns": [
-      "\\.pnp\\.[^\\/]+$"
-    ],
-    "coverageDirectory": "<rootDir>/tests/vue/artifacts/unit/coverage",
-    "cacheDirectory": "<rootDir>/tests/vue/artifacts/unit/cache",
-    "collectCoverageFrom": [
-      "resources/js/**/*.{js,vue}",
-      "!resources/js/bootstrap.js",
-      "!**/node_modules/**"
-    ],
+    "moduleFileExtensions": [ "js" ],
+    "coverageDirectory": "<rootDir>artifacts/unit/coverage",
+    "cacheDirectory": "<rootDir>artifacts/unit/cache",
     "coverageThreshold": {
       "global": {
-        "statements": 1,
-        "branches": 1,
-        "functions": 1,
-        "lines": 1
+        "statements": 4.99,
+        "branches": 0,
+        "functions": 0,
+        "lines": 4.9
       }
     },
     "moduleNameMapper": {
-      "^@/(.*)$": "<rootDir>/resources/js/$1"
+      "^@/(.*)$": "<rootDir>/lib/$1"
     },
-    "snapshotSerializers": [
-      "jest-serializer-vue"
-    ],
     "testMatch": [
-      "**/tests/vue/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)"
+      "**/tests/**/*.spec.(js)"
     ],
     "testURL": "http://localhost/"
   }
