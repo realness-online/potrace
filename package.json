@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/realness-online/potrace#readme",
   "devDependencies": {
+    "jimp": "^0.16.1",
     "lodash": "^4.15.0",
     "mocha": "^3.0.2",
     "should": "^11.1.0",
