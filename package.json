@@ -1,6 +1,6 @@
 {
   "name": "@realness.online/potrace",
-  "version": "2.1.23",
+  "version": "2.1.25",
   "description": "Potrace in Javascript",
   "main": "lib/index.js",
   "scripts": {
